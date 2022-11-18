@@ -1,0 +1,48 @@
+div{
+    color: #fff;
+}
+.padre {
+    border: 5px solid blue;
+    position: relative /*va ligado a abs, pero no siempre es el padre sino a quien va a ir pegado*/;  
+    height: 500px;
+}
+  
+.hermano,
+.hijo {
+  border: 4px solid black;
+  width: 100px;
+  height: 100px;
+}
+.absolute {
+  background-color: green;
+  position:absolute;
+  top: 0;
+  right: 0;
+  /*left: 25px;*/
+}/*Imagen se queda quieto solo en la posicion dada*/
+
+.sticky {
+  background-color: fuchsia;
+  position: sticky;
+  top: 0;
+  right: 20px;
+}/*Uso de los menus no avanza con las págs, la caja se queda pegada en un lado especifico*/
+
+.fixed {
+  background-color: salmon;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/*uso del important*/
+p{
+    color: tan !important;
+}
+p{
+    background-color: blue;
+    color: #fff;
+    padding: 19px;
+}
+p{
+    color: rgb(255, 0, 89);
+}

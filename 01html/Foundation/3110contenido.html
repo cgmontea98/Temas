@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <!--sirve para la descripcion dentro de la busqueda, resumen-->
+    <meta name="keywords" content="" />
+    <!--sirve para palabras clave de busqueda y posicionamiento-->
+    <link rel="icon" type="image/x-icon" href="descarga.jpg" />
+    <!--Icono chiquis de la pestaña-->
+    <title>Segunda clase de HTML</title>
+    <!--nombre de la pestaña-->
+  </head>
+
+  <body>
+
+    <header>
+      <img
+        src="descarga.jpg"
+        alt="pintura"
+      /><!--El atributo alt es por si pasa algo con la img, se tenga una descripción de respaldo-->
+      <figcaption>Imagen alusiva a una paleta de colores</figcaption>
+      <!--Descripcion que aparece sí o sí-->
+    </header>
+
+    <nav>
+      <a href="basic.html">Ruta Relativa</a
+      ><!--se puede solucionar con ../ para buscar donde esta el archi siempre y cuando no este dentro de la msima carpeta del hmtl-->
+      <a href="http://bit.institute/" target="_blank" rel="noopener noreferrer">Ruta Absoluta</a>
+      <br />
+      <hr />
+      <br />
+      <a href="#bienvenidos">Bienvenidos</a>
+      <!--Se usa el numeral para llamar en la barra de navegación unicamente con los atributos con id-->
+      <a href="#pas">Pasatiempos</a>
+      <a href="otro">otro</a>
+    </nav>
+
+    <main>
+      <section id="bienvenidos">
+        <!--El id es un nombre unico que no se repite dentro de otras etiquetas-->
+        <h1>Bienvenidos</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In reiciendis
+          eos minima impedit. Tempore nobis, voluptas pariatur sunt numquam ut
+          vel unde enim eligendi dicta, earum libero dolore veniam fuga!
+        </p>
+        <br />
+        <hr />
+      </section>
+
+      <section id="pas">
+        <h2>Pasatiempos</h2>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
+          asperiores obcaecati veniam necessitatibus quo nam fugiat, itaque
+          sapiente, deleniti neque perspiciatis recusandae autem mollitia
+          inventore provident nihil enim quod est.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
+          asperiores obcaecati veniam necessitatibus quo nam fugiat, itaque
+          sapiente, deleniti neque perspiciatis recusandae autem mollitia
+          inventore provident nihil enim quod est.
+        </p>
+        <h3>Cuáles son</h3>
+        <ul>
+          <li>Pintar</li>
+          <li>Enmarcar</li>
+          <li>Barnizar</li>
+        </ul>
+        <h3>No me gusta</h3>
+        <ol>
+          <li>Crear colores</li>
+          <li>Limpiar</li>
+          <li>Organizar</li>
+        </ol>
+      </section>
+
+      <section id="otro">
+        <h2>otro</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
+          asperiores obcaecati veniam necessitatibus quo nam fugiat, itaque
+          sapiente, deleniti neque perspiciatis recusandae autem mollitia
+          inventore provident nihil enim quod est.
+        </p>
+        <h3>Conocimiento</h3>
+        <dl>
+          <!--Otro tipo de tabla donde se coloca un concepto (dt) y se define (dd), todo dentro de (dl)-->
+          <dt>HTML</dt>
+          <dd>HyperText MarkUp Language</dd>
+        </dl>
+        <dl>
+          <dt>CSS</dt>
+          <dd>Cascade Style Sheet</dd>
+        </dl>
+        <dl>
+          <dt>JS</dt>
+          <dd>JavaScritp</dd>
+        </dl>
+      </section>
+
+      <section id="tabla">
+        <h2>Amigos</h2>
+        <table>
+          <!--tabla normal abre con table, sigue: tr y el contenido se escribe en td-->
+          <tr>
+            <td>#</td>
+            <td>Nombre</td>
+            <td>Edad</td>
+          </tr>
+          <tr>
+            <td>01</td>
+            <td>Camilo</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Sebastian</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Julio</td>
+            <td>25</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre</label
+          ><!--El atributo for esta enlazado al id del input-->
+          <input type="text" placeholder="Ingrese Nombre" id="nombre" />
+          <br />
+          <!--Dos formas de presionar nombre/apellido para que se diriga sobre el recueadro de texto para escribir opc 1 inpunt fuera de label con for e id igual; opc 2 inpun dentro de label sin for ni id-->
+          <label
+            >Apellido
+            <input type="text" placeholder="Ingrese Apellido" />
+          </label>
+          <br />
+          <label
+            >Dirección
+            <input type="text" placeholder="Ingrese Dirección" />
+          </label>
+          <label for="">
+            Origen
+            <select name="lista">
+              <!--El atributo name va ligado al value que se usa despues en JS-->
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select>
+          </label>
+          <br />
+          <label for="">
+            Acepta
+            <input type="checkbox" name="" id="" />
+          </label>
+          <button>Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <small> Reservador los derechos. </small>
+      <a href="#bienvenidos">Vovler al inicio</a
+      ><!--Se puede dejar muerto el hrf colocando un # dentro de ""; no es una buena práctica y es castigado por SEO-->
+    </footer>
+  </body>
+</html>

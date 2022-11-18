@@ -1,0 +1,19 @@
+/*Mobile First*/
+div {
+  width: 100px;
+  height: 100px;
+  border: 3px black;
+  background-color: yellowgreen;
+}
+/*Tabler*/
+@media screen and (min-width: 768px) /*Es una función que sirve para adapte el contenido del html*/{
+  div {
+    background-color: blue;
+  }
+}
+/*PC*/
+@media screen and (min-width: 1024px) {
+  div {
+    background-color: rebeccapurple;
+  }
+}

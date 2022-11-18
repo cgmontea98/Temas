@@ -1,0 +1,46 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+.tf {
+  background-color: green;
+  display: block;
+}
+
+.tb {
+  background-color: blue;
+  display: none;
+}
+.pc {
+  background-color: purple;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .tf {
+    background-color: green;
+    display: none;
+  }
+  .tb {
+    background-color: blue;
+    display: block;
+  }
+  .pc {
+    background-color: purple;
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .tf {
+    background-color: green;
+    display: none;
+  }
+  .tb {
+    background-color: blue;
+    display: none;
+  }
+  .pc {
+    background-color: purple;
+    display: block;
+  }
+}
