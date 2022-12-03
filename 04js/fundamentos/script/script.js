@@ -130,3 +130,34 @@ const apel = 'perez';
 
 const nomApel = `${nom} y el appelido es ${apel}`
 console.log(nomApel)*/
+
+// CLASE 2/12 TEMA: ESTRUCTURAS DE CONTAL  SUBTEMA: CICLOS
+
+/*
+for (let i = 0; i < 4; i++){
+    console.log(i)
+}*/
+
+/* let i = 0
+
+while (i < 4) {
+    i++ //si se incrementa presenta cambios para el control del ciclo aqui se le sumaria una unidad al último ciclo 
+    console.log(i)
+    i++ //es para determinar que el aumenta en una unidad pero no será tenido encuenta para la impresión
+} */
+/* 
+//aumentar lo que se ve o el resultado de la consola
+let i = 0
+
+while (i < 4) {
+    console.log(i +1)
+    i++ //es para determinar que el aumenta en una unidad pero no será tenido encuenta para la impresión
+} */
+/*
+//FUNCION DECLARADA
+
+function miFuncionSinParametros() {
+  console.log("hola");
+}
+miFuncionSinParametros();*/
+
