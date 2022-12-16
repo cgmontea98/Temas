@@ -47,8 +47,7 @@ function multiplos(){
 }
 multiplos()
  */
-
-//EJERCICOS 02/12
+/* //EJERCICOS 02/12
 
 let num = parseInt(prompt("ingrese un número"));
 let ope = prompt(
@@ -111,9 +110,7 @@ if (ope === "reducido") {
 if (ope === "cuadrado") {
   resultado = num * num;
   document.write("El cuadrado de parte del número es: ", resultado + "</br>");
-} 
-
-
+}  */
 /* Operaciones básicas
 let num1 = parseInt(prompt('Ingrese un número'));
 let oper = prompt('Ingrese signo: +; -; *; / o %')
@@ -145,7 +142,6 @@ resultado = num1 % num2;
 document.write(`El resto de la división realizada entre ${num1} y ${num2} es: ${resultado}`);
 }
 */
-
 /* // Pedir dos números, mostrar si el primer número es divisible por el segundo.
 let num1 = parseInt(prompt('Ingrese el primer número'));
 let num2 = parseInt(prompt('Ingrese el segundo número'));
@@ -157,23 +153,19 @@ if(num1 % num2 == 0){
 }else{
   document.write('Los números no son divisibles');
 } */
-
 // Pedir un número, mostrar la suma total desde 1 hasta n.
 // Pedir un número, mostrar la suma de los números pares desde 1 hasta n.
-
 /* let num = Number(prompt('ingrese número'))
 let suma = 0;
 for(let i = 0; i <= num; i++){
-  
   if(i % 2 === 0){
     document.write(i + '</br>')
-    suma = suma + i
-    
+    suma = suma + i 
   }
-
 }
  */
-
-// Pedir un número, mostrar la suma de los números impares desde 1 hasta n.
+/* // Pedir un número, mostrar la suma de los números impares desde 1 hasta n.
 // Pedir un número, mostrar multiplos de 3 desde 1 hasta n.
-// Pedir un número, mostrar los números desde n hasta 0.
+// Pedir un número, mostrar los números desde n hasta 0. */
+
+//
