@@ -57,6 +57,28 @@ console.log(person);
 
 console.log(person === person2); */ //muestra que es igual
 
-for (const key in person){
+/* for (const key in person){
     console.log('object:>> ', key);
+} */
+
+//console.log(Object.keys(person));
+
+//console.log(person.valueOf());
+
+let orig =  {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4,
 }
+console.log(orig);
+let des = {
+  aa: 11,
+  bb: 22,
+  cc: 33,
+  dd: 44,
+}
+console.log(des);
+
+const retor = Object.entries(orig)
+console.log(retor); //devuele por cada elemento entre un arregloy tiene la llave y el valor
